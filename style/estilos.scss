@@ -8,9 +8,13 @@ $subtitulos: lighter 35px 'Roboto';
 $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 //
 
-#bodyProd{
+#bodyHome{
     background-image: linear-gradient(rgb(182, 179, 179),(#414040));
 }
+    #bodyHome::-webkit-scrollbar {
+        width: 8px;
+        background-color: #212529;
+    }
 
 .logoBlanco{
     transform: translateX(2vh);
@@ -108,6 +112,11 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 #bodyServ{
         background-image: linear-gradient(rgb(182, 179, 179),(#414040));
 }  
+    #bodyServ::-webkit-scrollbar {
+        width: 8px;
+        background-color:#212529;
+    }
+
 
 .imgServ{
     margin-top: 20px;
@@ -215,6 +224,15 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     /* PRODUCTO */
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #d84100; 
+    border-radius: 5px;
+}
+
 .contProd{
     padding: 5px;
 
@@ -309,6 +327,11 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 #bodyContacto{
     background-image: linear-gradient(rgb(182, 179, 179),#292523);
 }
+    #bodyContacto::-webkit-scrollbar {
+        width: 8px;
+        background-color:#212529;
+    }
+
 
 iframe{
     border: #d84100 solid 1px;
@@ -404,6 +427,12 @@ iframe{
 #bodyGal{
     background-image: linear-gradient(rgb(182, 179, 179),(#414040));
 }
+    #bodyGal::-webkit-scrollbar {
+        width: 8px;
+        background-color:#212529;
+    }
+
+    
 
 .contGal{
     display: grid;

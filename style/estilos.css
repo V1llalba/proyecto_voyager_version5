@@ -3,9 +3,14 @@
   padding: 0;
 }
 
-#bodyProd {
+#bodyHome {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b3b3), to(#414040));
   background-image: linear-gradient(#b6b3b3, #414040);
+}
+
+#bodyHome::-webkit-scrollbar {
+  width: 8px;
+  background-color: #212529;
 }
 
 .logoBlanco {
@@ -129,6 +134,11 @@
 #bodyServ {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b3b3), to(#414040));
   background-image: linear-gradient(#b6b3b3, #414040);
+}
+
+#bodyServ::-webkit-scrollbar {
+  width: 8px;
+  background-color: #212529;
 }
 
 .imgServ {
@@ -262,6 +272,15 @@
 }
 
 /* PRODUCTO */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d84100;
+  border-radius: 5px;
+}
+
 .contProd {
   padding: 5px;
 }
@@ -367,6 +386,11 @@
 #bodyContacto {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b3b3), to(#292523));
   background-image: linear-gradient(#b6b3b3, #292523);
+}
+
+#bodyContacto::-webkit-scrollbar {
+  width: 8px;
+  background-color: #212529;
 }
 
 iframe {
@@ -476,6 +500,11 @@ iframe {
 #bodyGal {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b3b3), to(#414040));
   background-image: linear-gradient(#b6b3b3, #414040);
+}
+
+#bodyGal::-webkit-scrollbar {
+  width: 8px;
+  background-color: #212529;
 }
 
 .contGal {
