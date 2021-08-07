@@ -22,7 +22,6 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     animation-iteration-count: 1;
     animation-duration: 1s;
 }
-    
 
 .contNavA{
     transform: translateX(3vh);
@@ -50,6 +49,9 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 }
 
+.navbar-light .navbar-toggler  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
 
     /* INICIO */
 
@@ -595,7 +597,7 @@ iframe{
 /*iPhone 5/SE*/
 
 @media (min-width: 320px) and (max-width: 359px) {
-
+  
     /*NAV*/
 .logoBlanco{
     width: 80px;
@@ -831,6 +833,13 @@ iframe{
 
     /*HOME*/
 
+#bodyHome::-webkit-scrollbar{
+    width: 8px;
+    background-color: #212529;
+} 
+#bodyHome::-webkit-scrollbar-thumb{
+    background-color: #d84100;
+}   
 .imgHome{
     height: 200px;
 }
