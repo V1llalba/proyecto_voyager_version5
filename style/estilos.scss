@@ -16,52 +16,68 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #212529;
     }
 
-.logoBlanco{
-    transform: translateX(2vh);
-    animation-name: logo-nav;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-}
-
-.contNavA{
-    transform: translateX(3vh);
-    width: 700px;
-    display: flex;
-    justify-content: space-around;
-    animation-name: logo-nav;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-
-        &__aNav{
-            color: white !important;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 22px;
-            letter-spacing: 5px;
-            transition: all 0.3s;
+.navPosition{
+    border-bottom: #d84100 solid 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+        &--logo{
+            transform: translateX(2vh);
             
         }
+    .contenedor-A{
+        transform: translateX(3vh);
+        width: 700px;
+        display: flex;
+        justify-content: space-around;
+        
+            &__menu{
+                color: white !important;
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 22px;
+                letter-spacing: 5px;
+                transition: all 0.3s;
+            }
+            &__menu:hover{
+                color: #d84100 !important;
+                letter-spacing: 7px;
+                border-bottom: white solid 2px ;
+                border-radius: 20%;
+            }
+    } 
+}
+.carrito{
+    margin-right: 15vh;
 
-        &__aNav:hover{
-            color: #d84100 !important;
-            letter-spacing: 7px;
-            border-bottom: white solid 2px ;
-            border-radius: 20%;
-        }
+    &--svg{
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    &--svg:hover{
+        width: 35px;
+        height: 35px;
+        color: #d84100;
+    }
 }
 
-.navbar-light .navbar-toggler  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+.navbar-toggler{
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        transition: all 0.2s;
+    }
+    .navbar-toggler-icon:hover{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='orangered' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
 
+}
     /* INICIO */
 
 .imgHome{
     width: 100%;
     height: 500px;
     border-bottom: solid 1px #d84100;
-    animation-name: efectImg;
-    animation-iteration-count: 1;
-    animation-duration: 3s;
 }
    
 .cont{
@@ -75,16 +91,10 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font: $titulos;
         border-bottom: double 6px #d84100;
         border-radius: 20%;
-        animation-name: efectH1;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
 
             &--inicial{
                 font-size: 48px;
                 color: #d84100;
-                animation-name: efecto;
-                animation-iteration-count: infinite;
-                animation-duration: 4s;
             }
     }
 }
@@ -102,9 +112,6 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             width: 600px;
             color: black;
             font: $parrafo;
-            animation-name: efectParrafo;
-            animation-timing-function: 1;
-            animation-duration: 2s;
         }
 }
 
@@ -126,9 +133,6 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-left: #d84100 solid 6px;
     border-top: #d84100 solid 6px;
     border-radius: 15%;
-    animation-name: efectImg;
-    animation-iteration-count: 1;
-    animation-duration: 3s;
 }
     
 .contServ{
@@ -142,16 +146,10 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font: $titulos;
             border-bottom: double 6px #d84100;
             border-radius: 20%;
-            animation-name: efectH1;
-            animation-iteration-count: 1;
-            animation-duration: 6s;
     
                 &--inicial{
                     font-size: 48px;
                     color: #d84100;
-                    animation-name: efecto;
-                    animation-iteration-count: infinite;
-                    animation-duration: 4s;
                 }
         }
 }
@@ -166,9 +164,6 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font: $parrafo;
                 color: black;
                 line-height: 40px;
-                animation-name: efectParrafo;
-                animation-timing-function: 1;
-                animation-duration: 4s;
             }
     }
     
@@ -181,53 +176,57 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 list-style: none;
                 color: black;
                 font-size: 22px;
-                animation-name: efectParrafo;
-                animation-timing-function: 1;
-                animation-duration: 4s;
         }
 }
     
 .contHorario{
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom:20px;
-    display: flex;
-    justify-content: space-around;
-
+    margin: 10px;
+    text-align: center;
         &__h3{
-            font-size: 30px;
             color: black;
-                &--span2{
-                    font-size: 30px; 
-                    border-bottom: solid 4px #d84100;  
-                    border-radius: 20%;
-                }
-    
-                &--H{
-                    font-size: 35px;
-                    color: #d84100;       
-                }
-
-                &--A{
+                &--horario{
                     font-size: 30px;
-                    color: white;
-                    text-decoration: none;
-                    transition: all 0.3s;
-                }
-                &--A:hover{
-                    color:#d84100;
-                    letter-spacing: 4px;
                     border-bottom: #d84100 double 6px;
                     border-radius: 20%;
+                    letter-spacing: 1px;
                 }
+                &--H{
+                    font-size: 30px;
+                    color: #d84100;
+                }      
+        }
+}
+
+.contReserva{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+        &--a{
+            font-size: 25px;
+            text-decoration: none;
+            color: #d84100;
+            letter-spacing: 5px;
+            transition: all 0.2s;
+        }
+        &--a:hover{
+            border-radius: 20%;
+            border-bottom: #d84100 double 5px;
+            color: white;
+            letter-spacing: 7px;
         }
 }
     
 
     /* PRODUCTO */
 
+body{
+    background-image: linear-gradient(rgb(182, 179, 179),(#414040));
+}    
+
 body::-webkit-scrollbar {
     width: 8px;
+    background-color: #212529;
 }
 
 body::-webkit-scrollbar-thumb{
@@ -236,91 +235,94 @@ body::-webkit-scrollbar-thumb{
 }
 
 .contProd{
-    padding: 5px;
+    display: flex;                     
+    justify-content: center;
 
-        &__h2Prod{
-            margin-left: 2vh;
-            margin-bottom: 2vh;
-            border-bottom: #d84100 double 6px;
-            border-radius: 20%;
-            text-align: center;
-            width: 150px;
+        &__h1{
+            margin-top: 15px;
+            margin-bottom: 20px;
             color: black;
-            font: $subtitulos;
-                &--spanProd{
-                        color: #d84100;
+            font: $titulos;
+            border-bottom: double 6px #d84100;
+            border-radius: 20%;
+        }
+        &--inicial{
+            font-size: 48px;
+            color: #d84100;
+        }
+}
+
+
+.contProdH2{
+        &__h2{
+            text-align: center;
+            color: black;
+            width: 200px;
+            border-bottom: #d84100 double 5px;
+            border-radius: 20%;
+            margin: 20px;
+                &--span{
+                    color: #d84100;
                 }
         }
 }
 
-.imgProd{
-    width: 400px;
-    border-top: #d84100 6px solid;
-    border-left: #d84100 6px solid;
-    border-radius: 15%;
-    margin-left: 12vh;
-    margin-bottom: 40px;
-    animation-name: efectImg;
-    animation-iteration-count: 1;
-    animation-duration: 3s;   
+.card{
+    margin-bottom: 20px;
 }
 
+.card-title{
+    font-size: 22px;
+    color: black;
+}
 
+.card-text{
+    font-size: 18px;
+}
 
-
-.fichas{
-    animation-name: efectParrafo;
-    animation-timing-function: 1;
-    animation-duration: 3s;
-    margin-bottom: 16vh;
-
-        &__h3{
+.listaProd{
+    list-style: none;
+        &__precio{
             font-weight: bold;
-            margin-left: 8vh;
+            font-size: 22px;
         }
-            &__p{
-                font-size: 20px;
-                margin-left: 8vh;
-
-                    &--a{
-                        color: #d84100;
-                        text-decoration: none;
-                        font-size: 25px;
-                        transition: all 0.2s;
-                    }
-                    &--a:hover{
-                        letter-spacing: 3px;
-                        border-bottom: #d84100 double 5px;
-                        border-radius: 20%;
-                    }
-            }
-                        &__h4{
-                            width: 200px;
-                            border-radius: 20%;
-                            border-bottom: #d84100 double 6px;
-                            margin-left: 8vh;
-                        }
+        &__cuota{
+            color: #000;
+            font-size: 18px;
+        }
+        &--pago{
+            font-size: 23px;
+            color: #d84100;
+            text-decoration: none;
+            transition: all 0.2s; 
+        }
+        &--pago:hover{
+            letter-spacing: 2px;
+            border-radius: 20%;
+        }
+        &__llegada{
+            font-weight: bold;
+            font-size: 18px;
+        }
 }
 
-
-.botones{
-    padding: 10px;
+.cardBottom{
     display: flex;
-    justify-content: space-evenly;
-        &__boton{
-            padding: 5px;
+    flex-direction: column;
+        &__botones{
+            border-radius: 15px;
             background-color: #212529;
             color: #d84100;
-            font-size: 15px;
             font-weight: bold;
-            transition: all 0.3s;
+            font-size: 18px;
+            transition: all 0.5s;
         }
-        &__boton:hover{
-            color: #d84100;
+        &__botones:hover{
             background-color: white;
-            font-size: 17px;
+            letter-spacing: 2px;
         }
 }
+
 
 
 
@@ -338,9 +340,6 @@ body::-webkit-scrollbar-thumb{
 iframe{
     border: #d84100 solid 1px;
     transition: all 0.3s;
-    animation-name: iframeEfect;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
 }
 
 .contInfo{
@@ -349,9 +348,6 @@ iframe{
     background-color: rgba(0, 0, 0, 0.719);
     width: 700px;
     transform: translateX(11.5vh);
-    animation-name: iframeEfect;
-    animation-iteration-count: 1;
-    animation-duration: 2s;
 
         &__h2{
             font-size: 23px;
@@ -374,9 +370,6 @@ iframe{
     border-radius: 25px;
     border: #d84100 solid 1px;
     margin-bottom: 20px;
-    animation-name: formEfect;
-    animation-iteration-count: 1;
-    animation-duration: 3s;
 
     &__h2{
         color: white;
@@ -454,95 +447,6 @@ iframe{
 
     /* EFECTOS */
 
-    @keyframes logo-nav{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    
-    
-    @keyframes efectImg{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    
-    
-    @keyframes efectH1{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 1;
-        }
-        100%{
-            opacity: 2;
-        }
-    }
-    
-    
-    @keyframes efecto{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    
-    
-    @keyframes efectParrafo{
-        0%{
-            opacity: 0;
-        }
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    
-    
-    @keyframes formEfect{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    
-    
-    @keyframes iframeEfect{
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-    
-        100%{
-            opacity: 1;
-        }
-    }
-    
-
 
     /* FOOTER */
 
@@ -555,7 +459,7 @@ iframe{
             width: 190px;
             color: white;
             font-family: 'Roboto', sans-serif;
-            font-size: 20px;
+            font-size: 15px;
             padding: 10px;
             margin-top: 20px;
         }
