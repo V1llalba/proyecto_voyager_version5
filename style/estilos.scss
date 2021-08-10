@@ -46,21 +46,7 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
     } 
 }
-.carrito{
-    margin-right: 15vh;
 
-    &--svg{
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s;
-    }
-
-    &--svg:hover{
-        width: 35px;
-        height: 35px;
-        color: #d84100;
-    }
-}
 
 .navbar-toggler{
     .navbar-toggler-icon{
@@ -232,6 +218,22 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb{
     background-color: #d84100; 
     border-radius: 5px;
+}
+
+.carrito{
+    margin-right: 15vh;
+
+    &--svg{
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    &--svg:hover{
+        width: 35px;
+        height: 35px;
+        color: #d84100;
+    }
 }
 
 .contProd{
@@ -503,19 +505,24 @@ iframe{
 @media (min-width: 320px) and (max-width: 359px) {
   
     /*NAV*/
-.logoBlanco{
-    width: 80px;
-    margin-right: 50px;
-}
-    
-.contNavA{
-    &__aNav{
-            font-size: 18px;
+.navPosition{
+    background-color: green;
+        &--logo{
+            width: 80px;
+            margin-right: 50px;   
+        }
+
+.contenedor-A{
+    &__menu{
+        font-size: 18px;
     }
-    &__aNav:hover{
+    &__menu:hover{
         border: none;
     }
+}        
 }
+ 
+
 
     /*HOME*/
 
@@ -737,13 +744,6 @@ iframe{
 
     /*HOME*/
 
-#bodyHome::-webkit-scrollbar{
-    width: 8px;
-    background-color: #212529;
-} 
-#bodyHome::-webkit-scrollbar-thumb{
-    background-color: #d84100;
-}   
 .imgHome{
     height: 200px;
 }
