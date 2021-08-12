@@ -1,263 +1,43 @@
 
-       <div class="row">
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/producto.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title">Máscara reparación anti rotura Inforcer x 250ml</h3>
-                <p class="card-text">Está preparada para reparar cabellos quebradizos y sensibles.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3500</li>
-              <li class="listaProd__cuota list-group-item">6 X $583</li>
-              <li class="list-group-item"><a class="listaProd--pago " href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-              <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-          </div>      
-    </div>
 
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/producto3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Mascara Tratamiento Liss Unlimited x 250ml</h3>
-              <p class="card-text">Nutre y sella la cutícula. Ideal para cabellos con frizz e indisciplinados.</p>
-            </div>
-            <ul class="listaProde list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3500</li>
-              <li class="listaProd__cuota list-group-item">6 X $583</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input  class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/producto2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Mascara Tratamiento Keratin x 500m</h3>
-              <p class="card-text">Repara intensivamente la estructura interna del cabello frágil, aclarado y coloreado.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3560</li>
-              <li class="listaProd__cuota list-group-item">6 x $593</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input  class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/producto4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Shampoo Limpieza Profunda Cleansing x250</h3>
-              <p class="card-text">Elimina los restos de productos y los rastros de sebo del cabello y del cuero cabelludo normal.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$1960</li>
-              <li class="listaProd__cuota list-group-item">6 x $327</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega mañana por $450!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>  
-    </div> 
-    </div>
-</div>
-
-
-<div class="contProdH2">
-    <h2 class="contProdH2__h2"><span class="contProdH2__h2--span">M</span>aquinas</h2>
-</div>
-
-<div class="row">
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/maquina1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Maquina Clipper de Corte Profesional Super Motor</h3>
-              <p class="card-text">Es una potente máquina cortadora profesional con cable con cuchillas con alto contenido de carbono afiladas con polvo de diamante, lo último en tecnología.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3500</li>
-              <li class="listaProd__cuota list-group-item">6 X $583</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-              <input  class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
+<div class="carrito">
+            <a class="carrito__a" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="carrito--svg bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg></a>
           </div>
-    </div>
 
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/maquina2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Patillera Cuchilla en T Gold FX Babyliss Professional</h3>
-              <p class="card-text">Cuchilla expuesta con visión de 360° - Motor sin carbones de alto rendimiento diseñado por Ferrari - Carcasa completamente metálica / Mango texturizado.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$21900</li>
-              <li class="listaProd__cuota list-group-item">6 x $3650</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>
-    </div>
+          @media (min-width: 0px) and (max-width: 991px) {
 
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/maquina3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">BLACK Máquina De Corte Super Motor + Patillera</h3>
-              <p class="card-text">Se destacan el uso de cuchillas de acero inoxidable, precisas y súper afiladas que dan un suave y rápido corte, ya que aceptan más de 20 longitudes para lograr diferentes estilos.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$22900</li>
-              <li class="listaProd__cuota list-group-item">6 x $3817</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/maquina4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Máquina de Corte Extreme Grip 19 Piezas Wahl</h3>
-              <p class="card-text">Potente cortapelos con motor de servicio pesado para cortes de cabello extremos sin enganches combinacion de corte suave Diseñado para deslizarse.</p>
-            </div>
-            <ul class="listsProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$7990</li>
-              <li class="listaProd__cuota list-group-item">6 x $1332</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div> 
-    </div>
-</div>
+    .navPosition{
+        .contenedor-A{
+            width: fit-content;
+        }       
+    }
+}
 
 
-<div class="contProdH2">
-    <h2 class="contProdH2__h2"><span class="contProdH2__h2--span">T</span>ijeras</h2>
-</div>
-
-<div class="row">
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/tijera1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Tijera de Pulir Profesional Golden</h3>
-              <p class="card-text">Tijera de Pulir de 5.5" confeccionada en acero inoxidable en tonos dorado y negro para darle ese toque elegante y distintivo que la peluquería necesita.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$4550</li>
-              <li class="listaProd__cuota list-group-item">6 x $758</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
-            </ul>
-            <div class="cardBottom card-body">
-              <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-          </div>
-    </div>
-
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/tijera2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Tijera de Corte 5.5" Diamond Cobalt</h3>
-              <p class="card-text">Tijera de Corte de 5.5" confeccionada en acero inoxidable en tonos gris y negro para darle a la peluquería ese toque elegante y distintivo que necesita.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3250</li>
-              <li class="listaProd__cuota list-group-item">6 x $542</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega mañana por $500!</li>
-            </ul>
-            <div class="cardBottom card-body">
-              <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-          </div>
-    </div>
-
-   
-
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/tijera3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Tijera de Corte 5.5" Art HTU05T</h3>
-              <p class="card-text">Diseño artístico que le da un toque de elegancia al trabajo del profesional Diseño Ergonómico para un trabajo cómodo sin objeciones. Incluye Llave de ajuste (Filo Navaja).</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3190</li>
-              <li class="listaProd__cuota list-group-item">6 x $532</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega mañana por $500!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>  
-    </div>
-
-
-    <div class="col-lg-3 col-xs-12">
-        <div class="card" style="width: 18rem;">
-            <img src="../imagen/tijera4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="card-title">Kit Tijera de Corte + Navajín Silver</h3>
-              <p class="card-text">1 Tijera de Corte 5.5" Acero inoxidable, diseño ergonómico de calidad profesional 1 Navajín Acero inoxidable Incluye repuesto de 10 Cuchillas para el navajín.</p>
-            </div>
-            <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3590</li>
-              <li class="listaProd__cuota list-group-item">6 x $598</li>
-              <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
-              <li class="listaProd__llegada list-group-item">Llega mañana por $500!</li>
-            </ul>
-            <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
-            </div>
-        </div>  
-    </div>
-
-
-    </div>
-</div>
+background-color: darkred;
+            width: 320px;
+            margin-right: 30px;
+            font-size: 18px;
+            height: 60px;
+            text-align: center;
+                &--span2{
+                    font-size: 20px;
+                }
+    
+                &--H{
+                    font-size: 25px;    
+                }
+    
+                &--A{
+                    text-align: center;
+                    width: 340px;
+                    height: 30px;
+                    font-size: 18px;
+                }
+                &--A:hover{
+                    letter-spacing: 2px;
+                    border-bottom: none;
+                    font-size: 18px;
+                }

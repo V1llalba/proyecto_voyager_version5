@@ -1,3 +1,8 @@
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +35,6 @@
   -webkit-transform: translateX(3vh);
           transform: translateX(3vh);
   width: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -226,11 +228,6 @@
 }
 
 /* PRODUCTO */
-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b6b3b3), to(#414040));
-  background-image: linear-gradient(#b6b3b3, #414040);
-}
-
 body::-webkit-scrollbar {
   width: 8px;
   background-color: #212529;
@@ -295,7 +292,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
-  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
 .card-title {
@@ -541,15 +540,16 @@ iframe {
 /*iPhone 5/SE*/
 @media (min-width: 320px) and (max-width: 359px) {
   /*NAV*/
-  .navPosition {
-    background-color: green;
-  }
   .navPosition--logo {
     width: 80px;
-    margin-right: 50px;
+  }
+  .navPosition .contenedor-A {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .navPosition .contenedor-A__menu {
-    font-size: 18px;
+    font-size: large;
   }
   .navPosition .contenedor-A__menu:hover {
     border: none;
@@ -574,9 +574,10 @@ iframe {
   .contImgServ .imgServ {
     border-left: #d84100 solid 4px;
     border-top: #d84100 solid 4px;
-    margin-left: 1px;
     width: 100%;
-    height: 300px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: auto;
   }
   .contServ {
     margin-bottom: -10px;
@@ -587,50 +588,36 @@ iframe {
   .contServ__h1--inicial {
     font-size: 30px;
   }
+  .contTextoServ {
+    padding: 5px;
+  }
   .contTextoServ__texto {
     line-height: 30px;
-    width: 900px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-left: 4px;
     font-size: 16px;
   }
   .contListaServ--liServ {
-    margin-left: -30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: -20px;
     font-size: 14px;
   }
-  .contHorario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .contHorario__h3 {
-    margin-right: 30px;
-    width: 300px;
-    font-size: 15px;
-    height: 60px;
-    text-align: center;
-  }
-  .contHorario__h3--span2 {
-    font-size: 18px;
+    height: 40px;
+    font-size: 16px;
   }
   .contHorario__h3--H {
-    font-size: 18px;
+    font-size: 25px;
   }
-  .contHorario__h3--A {
-    text-align: center;
-    width: 300px;
-    height: 30px;
-    font-size: 15px;
+  .contHorario__h3--horario {
+    border-bottom: #d84100 solid 2px;
+    font-size: 20px;
   }
-  .contHorario__h3--A:hover {
-    letter-spacing: 0px;
-    border-bottom: none;
+  .contReserva--a {
     font-size: 18px;
   }
   /* PRODUCTOS */
@@ -698,6 +685,7 @@ iframe {
             flex-direction: column;
   }
   .contGal__img {
+    margin: auto;
     width: 270px;
     height: 330px;
   }
@@ -717,14 +705,19 @@ iframe {
 /*Android*/
 @media (min-width: 360px) and (max-width: 413px) {
   /*NAV*/
-  .logoBlanco {
+  .navPosition--logo {
     width: 80px;
     margin-right: 50px;
   }
-  .contNavA__aNav {
-    font-size: 18px;
+  .navPosition .contenedor-A {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .contNavA__aNav:hover {
+  .navPosition .contenedor-A__menu {
+    font-size: 20px;
+  }
+  .navPosition .contenedor-A__menu:hover {
     border: none;
   }
   /*HOME*/
@@ -747,9 +740,10 @@ iframe {
   .contImgServ .imgServ {
     border-left: #d84100 solid 4px;
     border-top: #d84100 solid 4px;
-    margin-left: 1px;
     width: 100%;
-    height: 350px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: auto;
   }
   .contServ {
     margin-bottom: -10px;
@@ -760,6 +754,9 @@ iframe {
   .contServ__h1--inicial {
     font-size: 30px;
   }
+  .contTextoServ {
+    padding: 5px;
+  }
   .contTextoServ__texto {
     line-height: 30px;
     width: 900px;
@@ -767,49 +764,29 @@ iframe {
     font-size: 16px;
   }
   .contListaServ--liServ {
-    margin-left: -30px;
+    margin-left: -20px;
     font-size: 14px;
   }
-  .contHorario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .contHorario__h3 {
-    margin-right: 30px;
-    width: 340px;
-    font-size: 18px;
-    height: 60px;
-    text-align: center;
-  }
-  .contHorario__h3--span2 {
-    font-size: 20px;
+    font-size: 17px;
   }
   .contHorario__h3--H {
-    font-size: 24px;
+    font-size: 25px;
   }
-  .contHorario__h3--A {
-    text-align: center;
-    width: 340px;
-    height: 30px;
-    font-size: 18px;
+  .contHorario__h3--horario {
+    font-size: 20px;
   }
-  .contHorario__h3--A:hover {
-    letter-spacing: 2px;
-    border-bottom: none;
-    font-size: 18px;
+  .contReserva--a {
+    font-size: 20px;
   }
   /* PRODUCTOS */
   .contProd__h2Prod {
     border-bottom: double #d84100 4px;
     font-size: 20px;
+  }
+  .carrito {
+    position: absolute;
+    left: 30vh;
   }
   .fichas .imgProd {
     border-left: #d84100 solid 4px;
@@ -884,7 +861,14 @@ iframe {
 /*iPhome 6/7/8 Plus*/
 @media (min-width: 414px) and (max-width: 500px) {
   /*NAV*/
-  .contNavA__aNav:hover {
+  .navPosition--logo {
+    width: 80px;
+    margin-right: 50px;
+  }
+  .navPosition .contenedor-A__menu {
+    font-size: 20px;
+  }
+  .navPosition .contenedor-A__menu:hover {
     border: none;
   }
   /*HOME*/
@@ -1042,12 +1026,11 @@ iframe {
 }
 
 @media (min-width: 501px) and (max-width: 600px) {
-  /*NAV*/
-  .contNavA__aNav {
-    font-size: 22px;
-  }
-  .contNavA__aNav:hover {
-    border: none;
+  .navPosition .contenedor-A {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: blueviolet;
   }
   /*HOME*/
   .imgHome {
@@ -1070,8 +1053,8 @@ iframe {
     border-left: #d84100 solid 4px;
     border-top: #d84100 solid 4px;
     margin-left: 1px;
-    width: 100%;
-    max-height: 500px;
+    width: 500px;
+    height: 400px;
   }
   .contServ {
     margin-bottom: -10px;

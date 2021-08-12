@@ -1,4 +1,7 @@
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2,.col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {padding-left: 0px; padding-right: 0px;}
+
 *{
+    
     margin: 0;
     padding: 0;
 }
@@ -28,7 +31,6 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .contenedor-A{
         transform: translateX(3vh);
         width: 700px;
-        display: flex;
         justify-content: space-around;
         
             &__menu{
@@ -206,9 +208,7 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     /* PRODUCTO */
 
-body{
-    background-image: linear-gradient(rgb(182, 179, 179),(#414040));
-}    
+
 
 body::-webkit-scrollbar {
     width: 8px;
@@ -270,7 +270,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .card{
-    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
 .card-title{
@@ -375,10 +376,10 @@ iframe{
 
     &__h2{
         color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 30px;
-    margin-bottom: 20px;
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
     }
     &--span{
         color: #d84100;
@@ -506,24 +507,21 @@ iframe{
   
     /*NAV*/
 .navPosition{
-    background-color: green;
-        &--logo{
-            width: 80px;
-            margin-right: 50px;   
-        }
-
-.contenedor-A{
-    &__menu{
-        font-size: 18px;
+    &--logo{
+        width: 80px;
     }
-    &__menu:hover{
-        border: none;
+    .contenedor-A{
+        width: fit-content;
+            &__menu{
+                font-size: large;
+            }
+            &__menu:hover{
+                border: none;
+            }
     }
-}        
+    
 }
  
-
-
     /*HOME*/
 
 .imgHome{
@@ -551,14 +549,14 @@ iframe{
  
   /* SERVICIO */
 
-  .contImgServ{
+.contImgServ{
     .imgServ{
         border-left: #d84100 solid 4px;
         border-top: #d84100 solid 4px;
-        margin-left: 1px;
         width: 100%;
-        height: 300px;
-        
+        height: 350px;
+        margin-top: 10px;
+        margin-left: auto;
     }
 }
 
@@ -573,9 +571,10 @@ iframe{
 }
 
 .contTextoServ{
+    padding: 5px;
     &__texto{
         line-height: 30px;
-        width: 900px;
+        width: fit-content;
         margin-left: 4px;
         font-size: 16px;
     }
@@ -584,40 +583,29 @@ iframe{
 
 .contListaServ{
     &--liServ{
-        margin-left: -30px;
+        width: fit-content;
+        margin-left: -20px;
         font-size: 14px;
     }
 }
 
 .contHorario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
         &__h3{
-            margin-right: 30px;
-            width: 300px;
-            font-size: 15px;
-            height: 60px;
-            text-align: center;
-                &--span2{
-                    font-size: 18px;
-                }
+            height: 40px;
+            font-size: 16px;
+            &--H{
+                font-size: 25px;
+            }
+            &--horario{
+                border-bottom: #d84100 solid 2px;
+                font-size: 20px;
+            }
+        }
+}
 
-                &--H{
-                    font-size: 18px;    
-                }
-
-                &--A{
-                    text-align: center;
-                    width: 300px;
-                    height: 30px;
-                    font-size: 15px;
-                }
-                &--A:hover{
-                    letter-spacing: 0px;
-                    border-bottom: none;
-                    font-size: 18px;
-                }
+.contReserva{
+        &--a{
+            font-size: 18px;
         }
 }
 
@@ -691,6 +679,7 @@ iframe{
     display: flex;
     flex-direction: column;
         &__img{
+            margin: auto;
             width: 270px;
             height: 330px;
         }
@@ -727,20 +716,24 @@ iframe{
 @media (min-width: 360px) and (max-width: 413px) {
 
     /*NAV*/
-.logoBlanco{
-    width: 80px;
-    margin-right: 50px;
-}
- 
-.contNavA{
-    &__aNav{
-        font-size: 18px;
+
+.navPosition{
+    &--logo{
+        width: 80px;
+        margin-right: 50px;   
     }
-    &__aNav:hover{
+
+.contenedor-A{
+    width: fit-content;
+    &__menu{
+        font-size: 20px;
+    }
+    &__menu:hover{
         border: none;
     }
-}
+} 
 
+}
 
     /*HOME*/
 
@@ -772,9 +765,10 @@ iframe{
     .imgServ{
         border-left: #d84100 solid 4px;
         border-top: #d84100 solid 4px;
-        margin-left: 1px;
-        width: 100%;
-        height: 350px;      
+        width: 100%;  
+        height: 400px;
+        margin-top: 10px; 
+        margin-left: auto;
     }
 }
     
@@ -790,6 +784,7 @@ iframe{
 
     
 .contTextoServ{
+    padding: 5px;
     &__texto{
         line-height: 30px;
         width: 900px;
@@ -800,42 +795,28 @@ iframe{
     
 .contListaServ{
     &--liServ{
-        margin-left: -30px;
+        margin-left: -20px;
         font-size: 14px;
     }
 }
     
 .contHorario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
         &__h3{
-            margin-right: 30px;
-            width: 340px;
-            font-size: 18px;
-            height: 60px;
-            text-align: center;
-                &--span2{
+            font-size: 17px;
+                &--H{
+                    font-size: 25px;
+                }
+                &--horario{
                     font-size: 20px;
                 }
-    
-                &--H{
-                    font-size: 24px;    
-                }
-    
-                &--A{
-                    text-align: center;
-                    width: 340px;
-                    height: 30px;
-                    font-size: 18px;
-                }
-                &--A:hover{
-                    letter-spacing: 2px;
-                    border-bottom: none;
-                    font-size: 18px;
-                }
         }
-}  
+} 
+
+.contReserva{
+    &--a{
+        font-size: 20px;
+    }
+}
 
 
    /* PRODUCTOS */
@@ -845,6 +826,17 @@ iframe{
         border-bottom: double #d84100 4px;
         font-size: 20px;
     }
+}
+
+.carrito{
+    position: absolute;
+    left: 30vh;
+        &__a{
+            
+        }
+        &--svg{
+            
+        }
 }
 
 .fichas{
@@ -936,10 +928,21 @@ iframe{
 
     /*NAV*/
  
-.contNavA{
-    &__aNav:hover{
+.navPosition{
+    &--logo{
+        width: 80px;
+        margin-right: 50px;   
+    }
+    
+.contenedor-A{
+    &__menu{
+        font-size: 20px;
+    }
+    &__menu:hover{
         border: none;
     }
+} 
+
 }
 
    /*HOME*/
@@ -1137,14 +1140,10 @@ iframe{
 
 @media (min-width: 501px) and (max-width: 600px) {
 
-    /*NAV*/
- 
-.contNavA{
-    &__aNav{
-        font-size: 22px;
-    }
-    &__aNav:hover{
-        border: none;
+.navPosition{
+    .contenedor-A{
+        width: fit-content;
+        background-color: blueviolet;
     }
 }
 
@@ -1176,12 +1175,13 @@ iframe{
     /*SERVICIO*/
     
 .contImgServ{
+
     .imgServ{
         border-left: #d84100 solid 4px;
         border-top: #d84100 solid 4px;
         margin-left: 1px;
-        width: 100%;
-        max-height: 500px;      
+        width: 500px;
+        height: 400px;    
     }
 }
     
@@ -1536,7 +1536,9 @@ iframe{
 }
 
 
-}    
+}
+
+
 
 
 
