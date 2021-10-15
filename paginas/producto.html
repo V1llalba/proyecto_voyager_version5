@@ -49,17 +49,71 @@
         </div> 
           
       <div class="carrito">
-          <a class="carrito__a" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="carrito--svg bi bi-cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg></a>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="carrito--svg bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+          </button>
       </div>
 </nav>
      
+  <!-- Modal -->
+<div class="container">
+    <div class="modal fade" tabindex="-1" id="modal1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                      <div class="modal-body">
+          
+               <!-- CARRITO -->
 
+<section class="shopping-cart">
+    <div class="container">
+      <h1 class="text-center"> <span class="text-center__span">C</span>ARRITO</h1>
+      <hr>
+          <div class="row">
+              <div class="col-6">
+                  <div class="shopping-cart-header">
+                      <h6>Producto</h6>
+                  </div>
+              </div>
+            
+              <div class="col-2">
+                  <div class="shopping-cart-header">
+                      <h6 class="text-truncate">Precio</h6>
+                  </div>
+              </div>
+            
+              <div class="col-4">
+                  <div class="shopping-cart-header">
+                      <h6>Cantidad</h6>
+                  </div>
+              </div>
+          </div>
+        
+<!-- shoppingCartItemsContainer -->
+<div class="shopping-cart-items shoppingCartItemsContainer">
+</div>
 
-
-
-
+<div class="row">
+    <div class="col-12">
+        <div class="shopping-cart-total d-flex align-items-center">
+            <p class="mb-0">Total:</p>
+            <p class="ml-4 mb-0 totalCarrito">$0</p> 
+            <button class="btn  ml-auto comprarButton" type="button" data-toggle="modal"
+              data-target="#comprarModal">Comprar</button>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid">
 <div class="row">
@@ -86,8 +140,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-              <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
+              <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
           </div>      
     </div>
@@ -106,8 +159,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input  class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input  class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>
     </div>
@@ -126,8 +178,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input  class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input  class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>
     </div>
@@ -146,8 +197,7 @@
               <li class="listaProd__llegada list-group-item">Llega mañana por $450!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>  
     </div> 
@@ -168,14 +218,13 @@
               <p class="card-text">Es una potente máquina cortadora profesional con cable con cuchillas con alto contenido de carbono afiladas con polvo de diamante, lo último en tecnología.</p>
             </div>
             <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3500</li>
+              <li class="listaProd__precio list-group-item">$35000</li>
               <li class="listaProd__cuota list-group-item">6 X $583</li>
               <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-              <input  class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
+              <input  class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
           </div>
     </div>
@@ -194,8 +243,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>
     </div>
@@ -214,8 +262,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>
     </div>
@@ -234,8 +281,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div> 
     </div>
@@ -262,8 +308,7 @@
               <li class="listaProd__llegada list-group-item">Llega gratis mañana!</li>
             </ul>
             <div class="cardBottom card-body">
-              <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
+              <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
           </div>
     </div>
@@ -282,8 +327,7 @@
               <li class="listaProd__llegada list-group-item">Llega mañana por $500!</li>
             </ul>
             <div class="cardBottom card-body">
-              <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-              <input class="cardBottom__botones" type="submit" value="Comprar">
+              <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
           </div>
     </div>
@@ -304,8 +348,7 @@
               <li class="listaProd__llegada list-group-item">Llega mañana por $500!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>  
     </div>
@@ -319,14 +362,13 @@
               <p class="card-text">1 Tijera de Corte 5.5" Acero inoxidable, diseño ergonómico de calidad profesional 1 Navajín Acero inoxidable Incluye repuesto de 10 Cuchillas para el navajín.</p>
             </div>
             <ul class="listaProd list-group list-group-flush">
-              <li class="listaProd__precio list-group-item">$3590</li>
+              <li class="listaProd__precio hola list-group-item">$3590</li>
               <li class="listaProd__cuota list-group-item">6 x $598</li>
               <li class="list-group-item"><a class="listaProd--pago" href="">Metodos de pago</a></li>
               <li class="listaProd__llegada list-group-item">Llega mañana por $500!</li>
             </ul>
             <div class="cardBottom card-body">
-                <input class="cardBottom__botones" type="submit" value="Añadir al carrito">
-                <input class="cardBottom__botones" type="submit" value="Comprar">
+                <input class="cardBottom__botones agregarAlCarrito" type="submit" value="Añadir al carrito">
             </div>
         </div>  
     </div>
@@ -361,6 +403,10 @@
     </div>             
   </footer>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="../main.js"></script>
      
 </body>
 

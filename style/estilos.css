@@ -77,6 +77,42 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='orangered' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* CARRITO */
+.container .text-center {
+  font-family: 'Roboto',sans-serif;
+  color: black;
+}
+
+.container .text-center__span {
+  color: #d84100;
+}
+
+.container .comprarButton {
+  border-radius: 15px;
+  background-color: #212529;
+  color: #d84100;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  left: 560px;
+}
+
+.container .comprarButton:hover {
+  background-color: white;
+  letter-spacing: 2px;
+  border: solid black 1px;
+}
+
+/* SOMBRA DE BOTON */
+.btn-check:focus + .btn, .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* INICIO */
 .imgHome {
   width: 100%;

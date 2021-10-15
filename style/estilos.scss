@@ -64,6 +64,41 @@ $parrafo:22px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
 }
+
+    /* CARRITO */
+ 
+.container{
+    .text-center{
+        font-family: 'Roboto',sans-serif;
+        color: black;
+            &__span{
+                color: #d84100;
+            }
+    }
+    .comprarButton{
+        border-radius: 15px;
+        background-color: #212529;
+        color: #d84100;
+        box-shadow: none;
+        font-weight: bold;
+        font-size: 18px;
+        transition: all 0.5s;
+        position: relative;
+        left: 560px;
+        }
+        .comprarButton:hover{
+                background-color: white;
+                letter-spacing: 2px;
+                border: solid black 1px;
+            }
+            
+}
+
+    /* SOMBRA DE BOTON */
+.btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+}
+
     /* INICIO */
 
 .imgHome{
@@ -1456,8 +1491,12 @@ iframe{
     }
 }
 
-
 }
+
+
+
+
+
 
 
 
